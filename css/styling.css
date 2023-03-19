@@ -5,6 +5,8 @@
 
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --Maintrans: 0.4s;
+    --main-padding: 60px;
 }
 body { 
     margin: 0;
@@ -13,4 +15,196 @@ body {
 }
 html {
     scroll-behavior: smooth;
+}
+.contanier { 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+@media (min-width: 768px) { 
+    .contanier { 
+        width: 750px;
+    }
+}
+@media (min-width: 998px) { 
+    .contanier { 
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) { 
+    .contanier { 
+        width: 1170px;
+    }
+}
+a { 
+    text-decoration: none;
+}
+header .contanier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contanier img {
+    width: 160px;
+}
+
+header .contanier a {
+    font-size: 18px;
+    color: var(--Light-Pink);
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 4rem;
+    border: 1px solid var(--Light-Pink);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+    header .contanier img { 
+        width: 120px;
+    }
+    header .contanier a {
+        padding: 3px 15px;
+    }
+}
+header .contanier a:hover { 
+    color: white;
+}
+header .contanier a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Light-Pink);
+    left: 0;
+    bottom: -100%;
+    z-index: -1;
+    transition: var(--Maintrans);
+}
+header .contanier a:hover::before{
+    bottom: 0;
+}
+main .landing .contanier { 
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media (max-width: 767px) {
+    main .landing .contanier {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+        max-width: 95%;
+    }
+}
+main .landing .contanier h1 {
+    margin-bottom: 5px;
+}
+main .landing .contanier p { 
+    max-width: 550px;
+    text-align: center;
+    color: var(--Very-Dark-Cyan);
+}
+a.main {
+    margin-top: 30px;
+    padding: 15px 50px;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+    border-radius: 4rem;
+    font-size: 16px;
+}
+a.main:hover { 
+    background-color: var(--Light-Pink);
+}
+main .landing .contanier img {
+    margin-top: 60px;
+    max-width: 660px;
+}
+@media (max-width: 767px) {
+    main .landing .contanier img {
+        max-width: 345px;
+    }
+}
+
+
+main .info-section .contanier { 
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    main .info-section .contanier  {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 767px) {
+    main .info-section .contanier .holder { 
+        margin-top: 50px;
+    }
+}
+
+main .info-section .contanier img { 
+    width: 20px;
+}
+main .info-section .contanier h1 { 
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 45px;
+    color: var(--Very-Dark-Cyan);
+}
+main .info-section .contanier p { 
+    margin-top: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--Very-Dark-Cyan);
+}
+
+
+main .info-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../imgs/bg-section-top-desktop-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 40px;
+}
+main .info-center img { 
+    max-width: 450px;
+}
+@media (max-width: 767px) { 
+    main .info-center { 
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    main .info-center img { 
+        max-width: 300px;
+    }
+}
+main .info-center p { 
+    max-width: 450px;
+}
+main .info-center.bg-white {
+    background-image: none;
+}
+@media (max-width: 767px) { 
+    main .info-center.bg-white  { 
+        flex-direction: column;
+    }
+}
+
+main .questions {
+    text-align: center;
+}
+main .questions h1 {
+    margin-bottom: 40px;
 }
