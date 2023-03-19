@@ -203,8 +203,121 @@ main .info-center.bg-white {
 }
 
 main .questions {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
     text-align: center;
 }
 main .questions h1 {
     margin-bottom: 40px;
+}
+
+footer { 
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .left { 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+footer .left img {
+    max-width: 450px;
+    color: white;
+}
+@media (max-width: 767px) { 
+    footer .left img { 
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}
+footer .left p {
+    max-width: 400px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+footer .left .foot {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+footer .left .foot i {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+footer .left .icon-holder i {
+    font-size: 20px;
+    margin:40px 15px 0 0;
+}
+@media (max-width:768px) { 
+    footer { 
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    footer img { 
+        max-width: 260px;
+    }
+    footer .left .icon-holder, 
+    footer .left p{
+        text-align: start;
+        margin-top: 10px;
+    }
+}
+
+footer .right { 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+footer .right h2 { 
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+footer .right p { 
+    max-width: 450px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+footer .right input { 
+    max-width: 450px; 
+    min-width: 450px; 
+    padding: 15px;
+    border-radius: 6px;
+}
+footer .right a { 
+    padding: 15px 40px;
+    background-color: var(--Pink);
+    color: white;
+    font-size: 14px;
+    margin-left: 40px;
+    border-radius: 6px;
+}
+footer .right a:hover { 
+    background-color: var(--Light-Pink);
+}
+@media (max-width:767px) { 
+    footer .right { 
+        text-align: start;
+    }
+    footer .right p, 
+    footer .right input { 
+        max-width: 260px;
+        min-width: 260px;
+    }
+    footer .right .element { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer .right a {
+        width: fit-content;
+        margin: 20px 0;
+        align-self: flex-end;
+    }
 }
