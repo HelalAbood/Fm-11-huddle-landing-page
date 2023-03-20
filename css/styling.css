@@ -230,9 +230,8 @@ footer .left {
 
 }
 footer .left img {
-    max-width: 300px;
-    color: white;
-    background-color: white;
+    max-width: 250px;
+    filter: brightness(0) invert(1);
 }
 @media (max-width: 767px) { 
     footer .left img { 
