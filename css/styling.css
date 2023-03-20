@@ -230,7 +230,7 @@ footer .left {
 
 }
 footer .left img {
-    max-width: 400px;
+    max-width: 300px;
     color: white;
     background-color: white;
 }
@@ -258,6 +258,10 @@ footer .left .foot i {
 footer .left .icon-holder i {
     font-size: 20px;
     margin:40px 15px 0 0;
+}
+footer .left .icon-holder i:hover { 
+    color: var(--Light-Pink);
+    cursor: pointer;
 }
 @media (max-width:768px) { 
     footer { 
