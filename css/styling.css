@@ -217,12 +217,13 @@ footer {
     background-image: url(../imgs/bg-footer-top-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40%;
+    background-position: 28%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 footer .left { 
     display: flex;
     flex-direction: column;
